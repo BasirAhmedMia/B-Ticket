@@ -148,7 +148,7 @@
         <!-- Best offer section -->
         <section class="container mx-auto py-32">
             <h2 class="font-raleway-700 text-4xl font-extrabold text-center">Best offers for you</h2>
-            
+
             <div class="grid grid-cols-2 gap-8 my-16">
                 <!-- New-card -->
                 <div class="card card-side  bg-card-y flex justify-around py-10 h-48 items-center">
@@ -165,7 +165,7 @@
                 </div>
                 <!-- Couple-card -->
                 <div class="card card-side  bg-card-p flex justify-around py-10 h-48 items-center">
-                    
+
                     <div class="font-inter-500 ">
                         <h1 class=" text-xl font-extrabold uppercase">20% Off</h1>
                         <p class="text-sm font-semibold">on your next purchase</p>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center">
                 <button
                     class="btn border-2 border-banner text-banner px-8 py-4 h-max text-xl font-bold font-raleway-700">See
@@ -211,8 +211,8 @@
                                     </div>
                                 </div>
                                 <div class="text-end">
-                                    <a class="btn  text-xl text-button-bus bg-button-bus-background "><img
-                                            src="images/seat-green.png" alt="">40 Seats left</a>
+                                    <a id="seat-left" class="btn  text-xl text-button-bus bg-button-bus-background "><img
+                                            src="images/seat-green.png" alt="">8 Seats left</a>
                                 </div>
                             </div>
                             <!-- greenline content -->
@@ -276,7 +276,8 @@
                             <div class="text-right py-8">
                                 <button class="btn py-2 px-10 h-max "> <img src="images/wheel.png" alt=""></button>
                             </div>
-                            <div  class="all-seats grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-6">
+                            <!-- All seats -->
+                            <div class="all-seats grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-6">
                                 <div class="flex gap-8 items-center">
                                     <p class="text-base">A</p>
                                     <button class="green-btn btn py-2 px-12 h-max ">A1</button>
@@ -295,7 +296,7 @@
                                     <button class="green-btn btn py-2 px-12 h-max ">B3</button>
                                     <button class="green-btn btn py-2 px-12 h-max ">B4</button>
                                 </div>
-                                 <!--<div class="flex gap-8 items-center">
+                                <!--<div class="flex gap-8 items-center">
                                     <p>C</p>
                                     <button class="green-btn btn py-2 px-12 h-max ">C1</button>
                                     <button class="green-btn btn py-2 px-12 h-max ">C2</button>
@@ -378,27 +379,26 @@
                             <hr class="border-gray-300 border-dashed">
                             <div class="bg-gray-100 p-4 rounded-xl my-6">
                                 <div class="">
-                                    <ul
-                                        class="font-inter-500 grid grid-cols-3 justify-items-center  text-base font-semibold py-4">
+                                    <ul class="font-inter-500 grid grid-cols-3 justify-items-center  text-base font-semibold py-4">
                                         <div class="flex gap-2 h-min">
                                             <li>Seat</li>
-                                            <button id="total-seat" class=" h-8 w-10 bg-button-bus rounded-full"></button>
+                                            <button id="total-seat"class=" h-8 w-10 bg-button-bus rounded-full"></button>
                                         </div>
                                         <li>Class</li>
                                         <li>Price</li>
                                     </ul>
                                     <hr class="border-gray-400 border-dashed">
                                     <!-- ticket will add -->
-                                    <div>
-                                        <ul class="font-inter-500 grid grid-cols-3 justify-items-center py-2">
-                                            <li>x</li>
-                                        </ul>
+                                    <div id="ticket-add">
+                                        <!-- <ul id="ticket-add" class="font-inter-500 grid grid-cols-3 justify-items-center py-2">
+                                            
+                                        </ul> -->
                                     </div>
                                     <hr class=" border-gray-400 my-4">
                                     <!-- total price -->
                                     <div class="font-inter-500 flex justify-between px-14">
                                         <p class=" text-base font-bold">Total Price</p>
-                                        <p class="uppercase text-base font-bold">Bdt 0</p>
+                                        <p class="uppercase text-base font-bold">Bdt <span id="total-price">0</span></p>
                                     </div>
                                     <!-- coupon input -->
                                     <div class="px-14 py-6">
@@ -409,7 +409,7 @@
                                     </div>
                                     <div class="font-inter-500 flex justify-between px-14">
                                         <p class=" text-base font-bold">Grand Total</p>
-                                        <p class="uppercase text-base font-bold">Bdt 0</p>
+                                        <p class="uppercase text-base font-bold">Bdt <span id="grand-total">0</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -448,6 +448,7 @@
             </div>
         </section>
         <script src="/script/script.js"></script>
+        
     </main>
     <!-- footer -->
     <footer class="bg-black">
@@ -455,7 +456,8 @@
             <div class="flex justify-between">
                 <div class="">
                     <h2 class="pb-6 text-white text-xl">B-Ticket</h2>
-                    <p class="text-gray-400">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+                    <p class="text-gray-400">P-Ticket is a digital platform to make your <br> daily commuting better.
+                    </p>
                 </div>
                 <div>
                     <p class="pb-6 text-white text-xl">Download our app</p>
