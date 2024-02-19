@@ -1,12 +1,16 @@
-// function seatGreen(){
-//     document.body.style.backgroundColor = 'green';
 
-// }
-document.getElementById('A1').addEventListener('click', function (){
-    document.body.style.backgroundColor = 'green';
+// scroll banner to ticket section
+document.getElementById('bnrBtn').addEventListener('click', function(){
+    const busTicket = document.getElementById('busticket');
+    
+    busTicket.scrollIntoView('busticket');
 })
+// select the button 
+let buttons = document.querySelectorAll('.green-btn');
 
-function makeGreen(){
-    document.body.style.backgroundColor = 'green';
-    // console.log('makeGreen')
+for(const button of buttons){
+    button.addEventListener('click', function(){
+        let select = button.style.backgroundColor = 'limegreen';
+    })
 }
+

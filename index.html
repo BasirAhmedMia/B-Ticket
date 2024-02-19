@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>B-Ticket</title>
-
     <!-- tailwind custom classes -->
     <script>
         tailwind.config = {
@@ -90,7 +89,7 @@
 </head>
 
 <body class="">
-    <header class="container mx-auto">
+    <header class="container mx-auto ">
         <!-- nav bar -->
         <nav>
             <div class="navbar bg-base-100 py-8 lg:py-20">
@@ -140,7 +139,7 @@
                     <p class="my-10">Yes, You can run unit tests and view the results directly within the app. The
                         integrated testing results directly within the app. The integrated testing features allow for a
                         streamlined. </p>
-                    <button class="btn border-none bg-banner text-black font-bold">Get Started</button>
+                    <button id="bnrBtn" class="btn border-none bg-banner text-black font-bold">Buy Tickets</button>
                 </div>
             </div>
         </div>
@@ -252,7 +251,7 @@
         </section>
         <!-- select seat section -->
         <section class="bg-paribahan-bg py-4 ">
-            <div class="container mx-auto bg-white mb-32 py-10 px-8 rounded-2xl">
+            <div id="busticket" class="container mx-auto bg-white mb-32 py-10 px-8 rounded-2xl">
                 <div class="grid grid-cols-12 gap-4">
                     <!-- All seat details -->
                     <div class="grid col-span-6">
@@ -277,97 +276,97 @@
                             <div class="text-right py-8">
                                 <button class="btn py-2 px-10 h-max "> <img src="images/wheel.png" alt=""></button>
                             </div>
-                            <div class="grid grid-cols-2 gap-6">
+                            <div  class="all-seats grid grid-cols-2 gap-6">
                                 <div class="flex gap-8 items-center">
                                     <p class="text-base">A</p>
-                                    <button class="btn py-2 px-12 h-max ">A1</button>
-                                    <button onclick="makeGreen()" class="btn py-2 px-12 h-max ">A2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">A1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">A2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">A3</button>
-                                    <button class="btn py-2 px-12 h-max ">A4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">A3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">A4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p>B</p>
-                                    <button class="btn py-2 px-12 h-max ">B1</button>
-                                    <button class="btn py-2 px-12 h-max ">B2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">B1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">B2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">B3</button>
-                                    <button class="btn py-2 px-12 h-max ">B4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">B3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">B4</button>
                                 </div>
-                                <div class="flex gap-8 items-center">
+                                 <!--<div class="flex gap-8 items-center">
                                     <p>C</p>
-                                    <button class="btn py-2 px-12 h-max ">C1</button>
-                                    <button class="btn py-2 px-12 h-max ">C2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">C1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">C2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">C3</button>
-                                    <button class="btn py-2 px-12 h-max ">C4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">C3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">C4</button>
                                 </div>
-                                <div class="flex gap-8 items-center">
+                                 <div class="flex gap-8 items-center">
                                     <p>D</p>
-                                    <button class="btn py-2 px-12 h-max ">D1</button>
-                                    <button class="btn py-2 px-12 h-max ">D2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">D1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">D2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">D3</button>
-                                    <button class="btn py-2 px-12 h-max ">D4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">D3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">D4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p>E</p>
-                                    <button class="btn py-2 px-12 h-max ">E1</button>
-                                    <button class="btn py-2 px-12 h-max ">E2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">E1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">E2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">E3</button>
-                                    <button class="btn py-2 px-12 h-max ">E4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">E3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">E4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p class="">F</p>
-                                    <button class="btn py-2 px-12 h-max ">F1</button>
-                                    <button class="btn py-2 px-12 h-max ">F2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">F1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">F2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">F3</button>
-                                    <button class="btn py-2 px-12 h-max ">F4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">F3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">F4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p class="text-base">G</p>
-                                    <button class="btn py-2 px-12 h-max ">G1</button>
-                                    <button class="btn py-2 px-12 h-max ">G2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">G1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">G2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">G3</button>
-                                    <button class="btn py-2 px-12 h-max ">G4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">G3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">G4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p>H</p>
-                                    <button class="btn py-2 px-12 h-max ">H1</button>
-                                    <button class="btn py-2 px-12 h-max ">H2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">H1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">H2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">H3</button>
-                                    <button class="btn py-2 px-12 h-max ">H4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">H3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">H4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p>I</p>
-                                    <button class="btn py-2 px-12 h-max ">I1</button>
-                                    <button class="btn py-2 px-12 h-max ">I2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">I1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">I2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">I3</button>
-                                    <button class="btn py-2 px-12 h-max ">I4</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">I3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">I4</button>
                                 </div>
                                 <div class="flex gap-8 items-center">
                                     <p>J</p>
-                                    <button class="btn py-2 px-12 h-max ">J1</button>
-                                    <button class="btn py-2 px-12 h-max ">J2</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">J1</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">J2</button>
                                 </div>
                                 <div class="flex gap-4 items-center justify-end">
-                                    <button class="btn py-2 px-12 h-max ">J3</button>
-                                    <button class="btn py-2 px-12 h-max ">J4</button>
-                                </div>
+                                    <button class="green-btn btn py-2 px-12 h-max ">J3</button>
+                                    <button class="green-btn btn py-2 px-12 h-max ">J4</button>
+                                </div> -->
                             </div>
                         </div>
                     </div>
