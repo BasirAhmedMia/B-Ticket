@@ -254,7 +254,7 @@
             <div id="busticket" class="container mx-auto bg-white mb-32 py-10 px-8 rounded-2xl">
                 <div class="grid grid-cols-12 gap-4">
                     <!-- All seat details -->
-                    <div class="grid col-span-6">
+                    <div class="grid sm:col-span-1 lg:col-span-6">
                         <div class="">
                             <h2 class="font-ralway-600 text-xl font-semibold py-4">Select Your Seat</h2>
                             <!-- All seats nav -->
@@ -276,7 +276,7 @@
                             <div class="text-right py-8">
                                 <button class="btn py-2 px-10 h-max "> <img src="images/wheel.png" alt=""></button>
                             </div>
-                            <div  class="all-seats grid grid-cols-2 gap-6">
+                            <div  class="all-seats grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-6">
                                 <div class="flex gap-8 items-center">
                                     <p class="text-base">A</p>
                                     <button class="green-btn btn py-2 px-12 h-max ">A1</button>
@@ -382,7 +382,7 @@
                                         class="font-inter-500 grid grid-cols-3 justify-items-center  text-base font-semibold py-4">
                                         <div class="flex gap-2 h-min">
                                             <li>Seat</li>
-                                            <button class="h-8 w-10 bg-button-bus rounded-full"></button>
+                                            <button id="total-seat" class=" h-8 w-10 bg-button-bus rounded-full"></button>
                                         </div>
                                         <li>Class</li>
                                         <li>Price</li>
